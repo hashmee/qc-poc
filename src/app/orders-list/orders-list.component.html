@@ -1,8 +1,29 @@
-<table class="table">
-    <thead>
-        <tr>
+<div class="container">
+<div class="row">
+  <h2>Orders List</h2>
+</div>
+<div class="flex-grid">
+  <div class="row">
+    <div class="cell-12">
+      <table class="table striped">
+        <thead>
+          <tr>
             <th class="sortable-column">Id</th>
             <th class="sortable-column">Title</th>
-        </tr>
-    </thead>
-</table>
+            <th class="sortable-column">Body</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let order of orders">
+            <td>
+              {{order.id}}
+            </td>
+            <td>{{order.title}}</td>
+            <td>{{order.body}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
