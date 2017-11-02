@@ -17,7 +17,7 @@ export class OrdersService {
   }
 
   orders() {
-    const url = environment.serviceUrl + 'posts';
+    const url = environment.serviceUrl + 'orders';
     return this.httpClient.get(url)
       .map(
         (res: Response) => {

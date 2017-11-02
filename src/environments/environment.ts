@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  serviceUrl: 'https://jsonplaceholder.typicode.com/'
+  serviceUrl: 'http://172.16.20.17:8080/'
 };

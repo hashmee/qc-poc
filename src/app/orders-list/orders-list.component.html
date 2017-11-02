@@ -9,17 +9,15 @@
         <thead>
           <tr>
             <th class="sortable-column">Id</th>
-            <th class="sortable-column">Title</th>
-            <th class="sortable-column">Body</th>
+            <th class="sortable-column">Name</th>
           </tr>
         </thead>
         <tbody>
           <tr *ngFor="let order of orders">
             <td>
-              {{order.id}}
+              {{order.itemId}}
             </td>
-            <td>{{order.title}}</td>
-            <td>{{order.body}}</td>
+            <td>{{order.itemName}}</td>
           </tr>
         </tbody>
       </table>
